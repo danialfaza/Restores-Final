@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingActivity"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_navigate_before_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="2dp"
+            android:text="Booking Disini\nFoodies!"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="6dp"
+                android:text="Roketto Cafe"
+                android:textSize="16sp"
+                android:textColor="#000"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="88dp"
+                    android:src="@drawable/ic_location_on_black_24dp"/>
+                <TextView
+                    android:id="@+id/alamat_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="Lowokwaru, Malang"
+                    android:textSize="13sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="88dp"
+                    android:src="@drawable/ic_star_black_24dp"/>
+                <TextView
+                    android:id="@+id/rating_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="4.8 (125 rating)"
+                    android:textSize="13sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/telp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:text="Telp. 0354-345353"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="404dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <GridLayout
+            android:layout_width="372dp"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:layout_marginStart="21dp"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:padding="10dp"
+            android:rowCount="@android:integer/config_shortAnimTime"
+            android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_rowWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="20dp"
+            app:cardMaxElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:text="Masukkan Data Booking"
+                    android:textColor="#000"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:layout_marginTop="18dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/insert_booking"
+                    android:id="@+id/tanggal"
+                    android:hint="Tanggal"
+                    android:textAlignment="center"
+                    android:width="200dp"
+                    android:layout_width="270dp"
+                    android:layout_height="52dp"
+                    android:layout_column="2"
+                    />
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/insert_booking"
+                    android:id="@+id/jam"
+                    android:hint="Jam Datang"
+                    android:textAlignment="center"
+                    android:width="200dp"
+                    android:layout_width="270dp"
+                    android:layout_height="52dp"
+                    android:layout_column="2"
+                    />
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/insert_booking"
+                    android:id="@+id/jumlah"
+                    android:hint="Jumlah Orang"
+                    android:textAlignment="center"
+                    android:width="200dp"
+                    android:layout_width="270dp"
+                    android:layout_height="52dp"
+                    android:layout_column="2"
+                    />
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/insert_booking"
+                    android:id="@+id/nama"
+                    android:hint="Atas Nama"
+                    android:textAlignment="center"
+                    android:width="200dp"
+                    android:layout_width="270dp"
+                    android:layout_height="52dp"
+                    android:layout_column="2"
+                    />
+
+                <Button
+                    android:id="@+id/booking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:text="Booking"
+                    android:textSize="10sp"
+                    android:background="@drawable/btn_booking"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+    </LinearLayout>
+</LinearLayout>
